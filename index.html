@@ -1,3 +1,19 @@
+<!-- Crea un nuovo file HTML e salvalo come index.html.
+
+Utilizza i seguenti tag HTML:
+- <div> per organizzare le diverse sezioni della pagina
+- <table> per mostrare le date, orari e dettagli disponibili per gli eventi
+- <a> per inserire link a ulteriori informazioni o pagine di conferma
+
+Crea una struttura per la pagina di prenotazione evento che includa:
+
+1. Un'intestazione che includa il titolo dell'evento e una breve descrizione, racchiusi in un <div>.
+2. Una tabella che mostri le date, gli orari e i posti disponibili, con righe per ogni evento.
+3. Una sezione per prenotare, in cui il visitatore può scegliere la data preferita e cliccare su un link <a> che porta alla pagina di conferma.
+
+> nome repo: html-table-k1 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +21,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+   
+   .heading {
+        color: blueviolet;
+        font-style: bold;
+        text-align: center;
+    }
+
+.booking{
+    color:red;
+    font-style:bold;
+}
     
+</style>
+
+<body>
+
+<div>
+    <h1 class="heading">PIZZA A VICO</h1>
+    <p>Mettiamo in strada tutte le pizzerie del territorio in 3 giorni. Una ghiotta occasione per i visitatori e in un momento di confronto e crescita per gli operatori del settore.</p>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Gli Eventi</th>
+                <th>Le Date</th>
+                <th>Gli Orari</th>
+                <th>I Posti Disponibili</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Margherita</td>
+                <td>23 Settembre</td>
+                <td>Ore 19:30</td>
+                <td>300 posti</td>
+            </tr>
+
+            <tr>
+                <td>Capricciosa</td>
+                <td>24 Settembre</td>
+                <td>Ore 20:30</td>
+                <td>200 posti</td>
+            </tr>
+
+            <tr>
+                <td>Marinara</td>
+                <td>25 Settembre</td>
+                <td>Ore 21:30</td>
+                <td>100 posti</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</div>
+<h3 class="booking">PRENOTA IL TUO EVENTO</h3>
+
+<button a href="https://www.antonioarcamone.it">23 Settembre</button>
+<button a href="https://www.antonioarcamone.it">24 Settembre</button>
+<button a href="https://www.antonioarcamone.it">25 Settembre</button>
+<div>
+
+</div>
+
 </body>
 </html>
